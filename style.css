@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+i{
+    font-size: 50px;
+}
+.container{
+margin: auto;
+background-image: linear-gradient(135deg,lightgreen,lightblue);
+border-radius: 20px;
+padding: 20px;
+text-align: center;
+width: 500px;
+}
+.search{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.search input{
+width: 80%;
+padding: 20px;
+border-radius: 40px;
+outline: none;
+border: none;
+font-size: 15px;
+box-shadow: 0 0 10px 5px inset #ececec;
+}
+.search button{
+background-color: transparent;
+border: none;
+display: flex;
+
+}
+.search button:hover{
+animation-name: up-down;
+animation-duration: .3s;
+animation-iteration-count: infinite;
+}
+@keyframes up-down{
+0%{transform: translateY(0);}
+50%{transform: translateY(10px);}
+100%{transform: translateY(0);}
+}
+.weather>h2{
+font-size: 40px;
+margin: 10px;
+}
+.weather > div{
+display: flex;
+align-items: center;
+justify-content: space-between;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+background-color: rgba(255, 255, 255, 0.6);
+border-radius: 12px;
+padding: 10px;
+position: relative;
+}
+.weather >img{
+max-width: 250px;
+}
+.weather>div div{
+background: rgba(249, 247, 247, 0.76);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(249, 247, 247, 0.3);
+padding: 10px;
+width: 40%;
+color: black;
+}
